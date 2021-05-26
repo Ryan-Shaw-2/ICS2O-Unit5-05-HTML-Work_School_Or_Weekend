@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<!--ICS2O-Unit5-05-HTML-Work_School_Or_Weekend-->
+<html lang="en-ca">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Work, school, or the weekend">
+    <meta name="keywords" content="mths, ics2o">
+    <meta name="author" content="Ryan-Shaw-2">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <link rel="stylesheet" href="./css/style.css">
+    <title> Work, school, or the weekend </title>
+  </head>
+  <body>
+    <script src="./js/script.js"></script>
+    <h1>Work, school, or the weekend</h1>
+    <p>This program checks if the user should go to work, school or if it's the weekend.</p>
+    <p>
+      <form action="javascript:checkClicked()">
+        <label for="userDay">Day: </label>
+        <input type="text" id="user-day" placeholder="e.g monday"><br><br>
+        <label for="userAge">Your age: </label>
+        <input type="number" id="user-age" placeholder="e.g 16"><br><br>
+        <input type="submit" value="Check">
+      </form>
+    </p>
+    <div id="user-input">
+      <div id="user-answer"></div>
+    </div>
+  </body>
+</html>
