@@ -7,17 +7,21 @@
 "use strict"
 
 function checkClicked () {
-  // this function checks whether the user will get a discount at the museum
+  // this function checks if the user should go to work, school or if it's the weekend
 
   // input
-  const userDay = document.getElementById("user-day").value
-  const userAge = parseInt(document.getElementById("user-age").value)
+  const weekday = document.getElementById('weekday').checked
+  const weekend = document.getElementById('weekend').checked
+  const under18 = document.getElementById("age1").checked
+  const over18 = document.getElementById("age2").checked
+  console.log(weekday, weekend)
+  console.log(under18, over18)
 
   // process
-  if (!(userDay == "saturday" || userDay == "sunday") && (userAge >= 18)) {
+  if (weekday == true && over18 == true) {
     // output
     document.getElementById("user-answer").innerHTML = "Time for work"
-  } else if (!(userDay == "saturday" || userDay == "sunday") && (userAge < 18)) {
+  } else if (weekday == true && under18 == true) {
     // output
     document.getElementById("user-answer").innerHTML = "Time for school"
   } else {

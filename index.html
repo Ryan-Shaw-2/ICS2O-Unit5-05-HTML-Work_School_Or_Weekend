@@ -20,10 +20,16 @@
     <p>This program checks if the user should go to work, school or if it's the weekend.</p>
     <p>
       <form action="javascript:checkClicked()">
-        <label for="userDay">Day: </label>
-        <input type="text" id="user-day" placeholder="e.g monday"><br><br>
-        <label for="userAge">Your age: </label>
-        <input type="number" id="user-age" placeholder="e.g 16"><br><br>
+        <p>Day:</p>
+        <input type="radio" id="weekday" name="day" value="weekday">
+				<label for="weekday">Weekday</label><br>
+				<input type="radio" id="weekend" name="day" value="weekend">
+				<label for="weekend">Weekend</label><br>
+        <p>Age:</p>
+        <input type="radio" id="age1" name="age" value="under18">
+				<label for="under18">Under 18</label><br>
+				<input type="radio" id="age2" name="age" value="over18">
+				<label for="over18">18 and over</label><br><br>
         <input type="submit" value="Check">
       </form>
     </p>
